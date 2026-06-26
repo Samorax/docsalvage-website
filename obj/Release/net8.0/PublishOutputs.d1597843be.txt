@@ -1,0 +1,6 @@
+C:\Users\damex\Downloads\Doc-Salvage Website Design\aspnet\DocSalvage\bin\Release\net8.0\publish\DocSalvage.exe
+C:\Users\damex\Downloads\Doc-Salvage Website Design\aspnet\DocSalvage\bin\Release\net8.0\publish\appsettings.json
+C:\Users\damex\Downloads\Doc-Salvage Website Design\aspnet\DocSalvage\bin\Release\net8.0\publish\DocSalvage.dll
+C:\Users\damex\Downloads\Doc-Salvage Website Design\aspnet\DocSalvage\bin\Release\net8.0\publish\DocSalvage.deps.json
+C:\Users\damex\Downloads\Doc-Salvage Website Design\aspnet\DocSalvage\bin\Release\net8.0\publish\DocSalvage.runtimeconfig.json
+C:\Users\damex\Downloads\Doc-Salvage Website Design\aspnet\DocSalvage\bin\Release\net8.0\publish\DocSalvage.pdb

@@ -1,0 +1,182 @@
+  <main>
+    <section style="background:#06303F;color:#fff;padding:72px 0">
+      <div style="max-width:1200px;margin:0 auto;padding:0 32px">
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#5FB7D6;margin-bottom:16px">User guide &middot; v1.1</div>
+        <h1 style="font-weight:800;font-size:clamp(34px,4vw,52px);line-height:1.05;letter-spacing:-.03em;margin:0 0 18px">Install &amp; quickstart guide.</h1>
+        <p style="font-size:18.5px;line-height:1.6;color:#AFC0D8;max-width:600px;margin:0">Everything you need to get Doc&#8209;Salvage running on your Windows PC and complete your first four key tasks. The whole setup takes 7 minutes or less.</p>
+      </div>
+    </section>
+
+    <section style="padding:64px 0 96px;background:#fff">
+      <div style="max-width:1100px;margin:0 auto;padding:0 32px;display:grid;grid-template-columns:228px 1fr;gap:56px;align-items:start">
+
+        <!-- TOC -->
+        <aside style="position:sticky;top:90px;align-self:start">
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#7A8AA0;margin-bottom:14px">Installation</div>
+          <nav style="display:flex;flex-direction:column;border-left:1px solid #E7E1D4;margin-bottom:26px">
+            <a href="#prereq" style="font-size:14px;color:#52617A;text-decoration:none;padding:6px 0 6px 16px;margin-left:-1px;border-left:1px solid transparent" data-hover="color:#1772A8;border-left-color:#1772A8">Prerequisites</a>
+            <a href="#install" style="font-size:14px;color:#52617A;text-decoration:none;padding:6px 0 6px 16px;margin-left:-1px;border-left:1px solid transparent" data-hover="color:#1772A8;border-left-color:#1772A8">Installing the app</a>
+            <a href="#provision" style="font-size:14px;color:#52617A;text-decoration:none;padding:6px 0 6px 16px;margin-left:-1px;border-left:1px solid transparent" data-hover="color:#1772A8;border-left-color:#1772A8">Sign-in &amp; provisioning</a>
+            <a href="#done" style="font-size:14px;color:#52617A;text-decoration:none;padding:6px 0 6px 16px;margin-left:-1px;border-left:1px solid transparent" data-hover="color:#1772A8;border-left-color:#1772A8">You're all set</a>
+          </nav>
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#7A8AA0;margin-bottom:14px">Quickstart</div>
+          <nav style="display:flex;flex-direction:column;border-left:1px solid #E7E1D4">
+            <a href="#transfer" style="font-size:14px;color:#52617A;text-decoration:none;padding:6px 0 6px 16px;margin-left:-1px;border-left:1px solid transparent" data-hover="color:#1772A8;border-left-color:#1772A8">Transfer files</a>
+            <a href="#find" style="font-size:14px;color:#52617A;text-decoration:none;padding:6px 0 6px 16px;margin-left:-1px;border-left:1px solid transparent" data-hover="color:#1772A8;border-left-color:#1772A8">Find a document</a>
+            <a href="#accounting" style="font-size:14px;color:#52617A;text-decoration:none;padding:6px 0 6px 16px;margin-left:-1px;border-left:1px solid transparent" data-hover="color:#1772A8;border-left-color:#1772A8">Accounting insertion</a>
+            <a href="#email" style="font-size:14px;color:#52617A;text-decoration:none;padding:6px 0 6px 16px;margin-left:-1px;border-left:1px solid transparent" data-hover="color:#1772A8;border-left-color:#1772A8">Email collection</a>
+          </nav>
+        </aside>
+
+        <!-- CONTENT -->
+        <article style="min-width:0;max-width:720px">
+
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#1772A8;margin-bottom:10px">Part 1 &middot; Installation guide</div>
+          <p style="font-size:16.5px;line-height:1.65;color:#52617A;margin:0 0 8px">Whether you're an IT admin setting things up for your organisation or an end user getting started for the first time, this walks you through every step. By the end you'll have Doc&#8209;Salvage fully installed and be ready to jump into the app.</p>
+
+          <!-- Prerequisites -->
+          <h2 id="prereq" style="scroll-margin-top:90px;font-weight:800;font-size:25px;letter-spacing:-.02em;margin:48px 0 8px;color:#083A4D">1. Prerequisites</h2>
+          <p style="font-size:15.5px;line-height:1.65;color:#52617A;margin:0 0 22px">Before installing, make sure you have the following in place. A few minutes checking these now saves time later.</p>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px">
+            <div style="border:1px solid #E7E1D4;border-radius:11px;padding:18px"><div style="font-weight:700;font-size:15px;margin-bottom:5px">Windows OS</div><div style="font-size:13.5px;line-height:1.55;color:#6B7B92">Doc&#8209;Salvage currently runs on Windows. Support for other operating systems is on the way.</div></div>
+            <div style="border:1px solid #E7E1D4;border-radius:11px;padding:18px"><div style="font-weight:700;font-size:15px;margin-bottom:5px">Active Azure subscription</div><div style="font-size:13.5px;line-height:1.55;color:#6B7B92">The tenant you plan to use must have an active Azure subscription attached.</div></div>
+            <div style="border:1px solid #E7E1D4;border-radius:11px;padding:18px"><div style="font-weight:700;font-size:15px;margin-bottom:5px">Global Admin permissions</div><div style="font-size:13.5px;line-height:1.55;color:#6B7B92">Required so the installer can provision the necessary Azure resources.</div></div>
+            <div style="border:1px solid #E7E1D4;border-radius:11px;padding:18px"><div style="font-weight:700;font-size:15px;margin-bottom:5px">Microsoft 365 account</div><div style="font-size:13.5px;line-height:1.55;color:#6B7B92">Used to set up your Active Directory profile during installation.</div></div>
+            <div style="border:1px solid #E7E1D4;border-radius:11px;padding:18px"><div style="font-weight:700;font-size:15px;margin-bottom:5px">A stable internet connection</div><div style="font-size:13.5px;line-height:1.55;color:#6B7B92">Installation connects to Azure and M365 throughout the process.</div></div>
+            <div style="border:1px solid #E7E1D4;border-radius:11px;padding:18px"><div style="font-weight:700;font-size:15px;margin-bottom:5px">A working default browser</div><div style="font-size:13.5px;line-height:1.55;color:#6B7B92">A browser window opens for the sign-in steps, so make sure yours is set up.</div></div>
+          </div>
+
+          <!-- Installing -->
+          <h2 id="install" style="scroll-margin-top:90px;font-weight:800;font-size:25px;letter-spacing:-.02em;margin:52px 0 8px;color:#083A4D">2. Installing Doc&#8209;Salvage</h2>
+          <h3 style="font-weight:700;font-size:17px;margin:24px 0 16px;color:#083A4D">Downloading the app</h3>
+          <div style="display:flex;flex-direction:column;gap:16px">
+            <div style="display:flex;gap:14px"><div style="flex-shrink:0;width:26px;height:26px;border-radius:50%;background:#083A4D;color:#fff;font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center">1</div><div style="font-size:15px;line-height:1.6;color:#3A4A60;padding-top:2px">Open the <b>Microsoft Store</b> on your Windows PC.</div></div>
+            <div style="display:flex;gap:14px"><div style="flex-shrink:0;width:26px;height:26px;border-radius:50%;background:#083A4D;color:#fff;font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center">2</div><div style="font-size:15px;line-height:1.6;color:#3A4A60;padding-top:2px">Search for &ldquo;Doc&#8209;Salvage&rdquo; and press Enter.</div></div>
+            <div style="display:flex;gap:14px"><div style="flex-shrink:0;width:26px;height:26px;border-radius:50%;background:#083A4D;color:#fff;font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center">3</div><div style="font-size:15px;line-height:1.6;color:#3A4A60;padding-top:2px">Select the app and click <b>Get</b> (or <b>Install</b>) to begin the download.</div></div>
+            <div style="display:flex;gap:14px"><div style="flex-shrink:0;width:26px;height:26px;border-radius:50%;background:#083A4D;color:#fff;font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center">4</div><div style="font-size:15px;line-height:1.6;color:#3A4A60;padding-top:2px">Once the download completes, launch the installer to get started.</div></div>
+          </div>
+
+          <h3 style="font-weight:700;font-size:17px;margin:32px 0 14px;color:#083A4D">Completing the setup form</h3>
+          <p style="font-size:15.5px;line-height:1.65;color:#52617A;margin:0 0 18px">When the installer starts, you'll be greeted with a setup form. This is how Doc&#8209;Salvage gets to know you and your organisation &mdash; fill it in carefully.</p>
+          <div style="border:1px solid #E7E1D4;border-radius:11px;overflow:hidden;margin-bottom:18px">
+            <div style="display:grid;grid-template-columns:1fr 1.5fr;background:#083A4D;color:#fff;font-size:12px;font-weight:600;letter-spacing:.04em;text-transform:uppercase"><div style="padding:11px 16px">Field</div><div style="padding:11px 16px">What to enter</div></div>
+            <div style="display:grid;grid-template-columns:1fr 1.5fr;border-top:1px solid #E7E1D4"><div style="padding:13px 16px;font-weight:600;font-size:14px;color:#083A4D">Azure tenant email</div><div style="padding:13px 16px;font-size:14px;color:#52617A;border-left:1px solid #E7E1D4">The email address associated with your Azure account.</div></div>
+            <div style="display:grid;grid-template-columns:1fr 1.5fr;border-top:1px solid #E7E1D4;background:#FAF7EF"><div style="padding:13px 16px;font-weight:600;font-size:14px;color:#083A4D">Organisation name</div><div style="padding:13px 16px;font-size:14px;color:#52617A;border-left:1px solid #E7E1D4">The name of your company or organisation.</div></div>
+            <div style="display:grid;grid-template-columns:1fr 1.5fr;border-top:1px solid #E7E1D4"><div style="padding:13px 16px;font-weight:600;font-size:14px;color:#083A4D">Address</div><div style="padding:13px 16px;font-size:14px;color:#52617A;border-left:1px solid #E7E1D4">Your organisation's physical address.</div></div>
+            <div style="display:grid;grid-template-columns:1fr 1.5fr;border-top:1px solid #E7E1D4;background:#FAF7EF"><div style="padding:13px 16px;font-weight:600;font-size:14px;color:#083A4D">Contact email</div><div style="padding:13px 16px;font-size:14px;color:#52617A;border-left:1px solid #E7E1D4">An email for support and contact &mdash; can differ from your Azure email.</div></div>
+          </div>
+          <div style="background:#EAF3F8;border:1px solid #C9E4EE;border-left:3px solid #1772A8;border-radius:8px;padding:13px 17px;font-size:14px;line-height:1.6;color:#2C4754;margin-bottom:14px"><b style="color:#125D8A">Tip&nbsp;&middot;&nbsp;</b>All fields are required. You won't be able to proceed until everything is filled in.</div>
+          <p style="font-size:15.5px;line-height:1.65;color:#52617A;margin:0">Once filled in, scroll down to the Terms and Conditions. We encourage you to read through them before accepting &mdash; tick the checkbox and click <b>Next</b> to continue.</p>
+
+          <!-- Provisioning -->
+          <h2 id="provision" style="scroll-margin-top:90px;font-weight:800;font-size:25px;letter-spacing:-.02em;margin:52px 0 8px;color:#083A4D">3. Sign-in &amp; resource provisioning</h2>
+          <h3 style="font-weight:700;font-size:17px;margin:24px 0 14px;color:#083A4D">Azure sign-in</h3>
+          <p style="font-size:15.5px;line-height:1.65;color:#52617A;margin:0 0 16px">Once you click Next, a browser window opens automatically &mdash; this is completely normal. You'll be prompted to sign in to your Azure account.</p>
+          <div style="display:flex;flex-direction:column;gap:16px;margin-bottom:14px">
+            <div style="display:flex;gap:14px"><div style="flex-shrink:0;width:26px;height:26px;border-radius:50%;background:#083A4D;color:#fff;font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center">1</div><div style="font-size:15px;line-height:1.6;color:#3A4A60;padding-top:2px">Sign in using your Azure tenant email address.</div></div>
+            <div style="display:flex;gap:14px"><div style="flex-shrink:0;width:26px;height:26px;border-radius:50%;background:#083A4D;color:#fff;font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center">2</div><div style="font-size:15px;line-height:1.6;color:#3A4A60;padding-top:2px">If you manage multiple tenants, select the one with an active Azure subscription from the login interface.</div></div>
+            <div style="display:flex;gap:14px"><div style="flex-shrink:0;width:26px;height:26px;border-radius:50%;background:#083A4D;color:#fff;font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center">3</div><div style="font-size:15px;line-height:1.6;color:#3A4A60;padding-top:2px">Once signed in, close the browser if it doesn't close automatically and return to the installer &mdash; provisioning begins straight away.</div></div>
+          </div>
+
+          <h3 style="font-weight:700;font-size:17px;margin:32px 0 14px;color:#083A4D">What gets provisioned</h3>
+          <p style="font-size:15.5px;line-height:1.65;color:#52617A;margin:0 0 18px">Doc&#8209;Salvage now sets up everything it needs on Azure, automatically. The following resources are created inside a resource group called <b>docsalvage</b>:</p>
+          <div style="border:1px solid #E7E1D4;border-radius:11px;overflow:hidden;margin-bottom:18px">
+            <div style="display:grid;grid-template-columns:1fr 1fr;background:#083A4D;color:#fff;font-size:12px;font-weight:600;letter-spacing:.04em;text-transform:uppercase"><div style="padding:11px 16px">Resource</div><div style="padding:11px 16px">Name</div></div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;border-top:1px solid #E7E1D4"><div style="padding:12px 16px;font-weight:600;font-size:14px;color:#083A4D">Entra ID App</div><div style="padding:12px 16px;font-size:14px;color:#52617A;border-left:1px solid #E7E1D4;font-family:'IBM Plex Mono',monospace">Doc-Salvage</div></div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;border-top:1px solid #E7E1D4;background:#FAF7EF"><div style="padding:12px 16px;font-weight:600;font-size:14px;color:#083A4D">Storage Account</div><div style="padding:12px 16px;font-size:14px;color:#9AA8BC;border-left:1px solid #E7E1D4">auto-generated</div></div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;border-top:1px solid #E7E1D4"><div style="padding:12px 16px;font-weight:600;font-size:14px;color:#083A4D">Key Vault</div><div style="padding:12px 16px;font-size:14px;color:#9AA8BC;border-left:1px solid #E7E1D4">auto-generated</div></div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;border-top:1px solid #E7E1D4;background:#FAF7EF"><div style="padding:12px 16px;font-weight:600;font-size:14px;color:#083A4D">Event Hub</div><div style="padding:12px 16px;font-size:14px;color:#9AA8BC;border-left:1px solid #E7E1D4">auto-generated</div></div>
+          </div>
+          <div style="background:#FBF3E9;border:1px solid #F0E0C8;border-left:3px solid #C0883C;border-radius:8px;padding:13px 17px;font-size:14px;line-height:1.6;color:#5C4622;margin-bottom:14px"><b style="color:#9A6A1E">Important&nbsp;&middot;&nbsp;</b>Do not modify or delete the <b>docsalvage</b> resource group or its contents. These resources are critical to how Doc&#8209;Salvage works.</div>
+          <div style="background:#F6F3EC;border:1px solid #E7E1D4;border-left:3px solid #9AA8BC;border-radius:8px;padding:13px 17px;font-size:14px;line-height:1.6;color:#475568;margin-bottom:24px"><b style="color:#3A4A60">Note&nbsp;&middot;&nbsp;</b>Provisioning typically takes 7 minutes or less. A progress indicator shows while this happens.</div>
+
+          <h3 style="font-weight:700;font-size:17px;margin:0 0 14px;color:#083A4D">Microsoft 365 sign-in</h3>
+          <p style="font-size:15.5px;line-height:1.65;color:#52617A;margin:0 0 16px">Near the end of provisioning, a browser window opens once more for your M365 sign-in. This lets Doc&#8209;Salvage retrieve your Active Directory profile, which is essential for the app to work correctly.</p>
+          <div style="display:flex;flex-direction:column;gap:16px">
+            <div style="display:flex;gap:14px"><div style="flex-shrink:0;width:26px;height:26px;border-radius:50%;background:#083A4D;color:#fff;font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center">1</div><div style="font-size:15px;line-height:1.6;color:#3A4A60;padding-top:2px">Sign in using your M365 account credentials.</div></div>
+            <div style="display:flex;gap:14px"><div style="flex-shrink:0;width:26px;height:26px;border-radius:50%;background:#083A4D;color:#fff;font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center">2</div><div style="font-size:15px;line-height:1.6;color:#3A4A60;padding-top:2px">Once signed in, return to the installer to complete the process.</div></div>
+          </div>
+
+          <!-- Done -->
+          <h2 id="done" style="scroll-margin-top:90px;font-weight:800;font-size:25px;letter-spacing:-.02em;margin:52px 0 8px;color:#083A4D">4. You're all set</h2>
+          <p style="font-size:15.5px;line-height:1.65;color:#52617A;margin:0 0 14px">Congratulations &mdash; you've successfully installed Doc&#8209;Salvage. Once installation completes, you'll be taken automatically to the Main Page, where you can start exploring everything the app has to offer.</p>
+          <div style="background:#F6F3EC;border:1px solid #E7E1D4;border-left:3px solid #9AA8BC;border-radius:8px;padding:13px 17px;font-size:14px;line-height:1.6;color:#475568;margin-bottom:26px"><b style="color:#3A4A60">Coming soon&nbsp;&middot;&nbsp;</b>Screenshots and video walkthroughs will be added to this guide to help you navigate the app with ease.</div>
+
+          <h3 style="font-weight:700;font-size:17px;margin:0 0 14px;color:#083A4D">Ran into an issue?</h3>
+          <div style="display:flex;flex-direction:column;gap:14px">
+            <div style="display:flex;gap:13px"><span style="color:#1772A8;font-weight:800;flex-shrink:0">1.</span><div style="font-size:15px;line-height:1.6;color:#3A4A60"><b>Retry the installation.</b> Close the installer, relaunch it and go through the steps again &mdash; most issues resolve on a second attempt.</div></div>
+            <div style="display:flex;gap:13px"><span style="color:#1772A8;font-weight:800;flex-shrink:0">2.</span><div style="font-size:15px;line-height:1.6;color:#3A4A60"><b>Still not working?</b> Reach out to our support team at <a href="mailto:hello@@bybwe.com" style="color:#1772A8;font-weight:600;text-decoration:none">hello@@bybwe.com</a> and we'll be happy to help.</div></div>
+          </div>
+
+          <!-- ===== QUICKSTART ===== -->
+          <div style="height:1px;background:#E7E1D4;margin:56px 0 48px"></div>
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#1772A8;margin-bottom:10px">Part 2 &middot; Quickstart</div>
+          <h2 style="font-weight:800;font-size:28px;letter-spacing:-.025em;margin:0 0 12px;color:#083A4D">Get up and running fast</h2>
+          <p style="font-size:16.5px;line-height:1.65;color:#52617A;margin:0">Four key actions to help you hit the ground running. You don't have to do them all at once &mdash; but start with transferring files, since other features depend on having documents in your Library first.</p>
+
+          <!-- Transfer -->
+          <h2 id="transfer" style="scroll-margin-top:90px;font-weight:800;font-size:23px;letter-spacing:-.02em;margin:44px 0 8px;color:#083A4D">1. Transferring files to your Library</h2>
+          <p style="font-size:15.5px;line-height:1.65;color:#52617A;margin:0 0 18px">The Library is your central document hub &mdash; where all your documents live, organised and ready for the app to work with.</p>
+          <div style="display:flex;flex-direction:column;gap:16px;margin-bottom:16px">
+            <div style="display:flex;gap:14px"><div style="flex-shrink:0;width:26px;height:26px;border-radius:50%;background:#083A4D;color:#fff;font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center">1</div><div style="font-size:15px;line-height:1.6;color:#3A4A60;padding-top:2px">In the left navigation, click the <b>Library</b> icon to open the Library page.</div></div>
+            <div style="display:flex;gap:14px"><div style="flex-shrink:0;width:26px;height:26px;border-radius:50%;background:#083A4D;color:#fff;font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center">2</div><div style="font-size:15px;line-height:1.6;color:#3A4A60;padding-top:2px">At the top right, click the <b>+</b> icon to create a new folder, then fill in a clear <b>Folder Name</b> and pick the <b>Local Folder</b> on your PC to transfer files from.</div></div>
+            <div style="display:flex;gap:14px"><div style="flex-shrink:0;width:26px;height:26px;border-radius:50%;background:#083A4D;color:#fff;font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center">3</div><div style="font-size:15px;line-height:1.6;color:#3A4A60;padding-top:2px">Click <b>Confirm</b> to start the transfer. Doc&#8209;Salvage moves your files into the new folder in your Library.</div></div>
+          </div>
+          <div style="background:#F6F3EC;border:1px solid #E7E1D4;border-left:3px solid #9AA8BC;border-radius:8px;padding:13px 17px;font-size:14px;line-height:1.6;color:#475568;margin-bottom:12px"><b style="color:#3A4A60">Note&nbsp;&middot;&nbsp;</b>Processing may take a few minutes. Wait for the <b>Ready</b> notification at the base of the page before using the AI Document Finder.</div>
+          <div style="background:#EAF3F8;border:1px solid #C9E4EE;border-left:3px solid #1772A8;border-radius:8px;padding:13px 17px;font-size:14px;line-height:1.6;color:#2C4754"><b style="color:#125D8A">Good to know&nbsp;&middot;&nbsp;</b>v1.1 supports a shallow folder structure &mdash; folders inside folders aren't supported just yet. Deep structure is coming.</div>
+
+          <!-- Find -->
+          <h2 id="find" style="scroll-margin-top:90px;font-weight:800;font-size:23px;letter-spacing:-.02em;margin:44px 0 8px;color:#083A4D">2. Finding a document</h2>
+          <p style="font-size:15.5px;line-height:1.65;color:#52617A;margin:0 0 18px">Let the AI do the heavy lifting. The Document Finder is an AI agent that finds documents for you &mdash; just ask in plain language, no complicated search queries needed.</p>
+          <div style="display:flex;flex-direction:column;gap:16px;margin-bottom:16px">
+            <div style="display:flex;gap:14px"><div style="flex-shrink:0;width:26px;height:26px;border-radius:50%;background:#083A4D;color:#fff;font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center">1</div><div style="font-size:15px;line-height:1.6;color:#3A4A60;padding-top:2px">In the left navigation, click the <b>Workspace</b> icon to open the Workspace.</div></div>
+            <div style="display:flex;gap:14px"><div style="flex-shrink:0;width:26px;height:26px;border-radius:50%;background:#083A4D;color:#fff;font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center">2</div><div style="font-size:15px;line-height:1.6;color:#3A4A60;padding-top:2px">In the chat box, type what you're looking for &mdash; Doc&#8209;Salvage understands your intent and brings the document back.</div></div>
+          </div>
+          <div style="background:#06303F;border-radius:10px;padding:18px 20px;margin-bottom:14px;display:flex;flex-direction:column;gap:10px">
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:13.5px;color:#C9D6EA"><span style="color:#5FB7D6">&rsaquo;</span> Find me the invoice from January 2024</div>
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:13.5px;color:#C9D6EA"><span style="color:#5FB7D6">&rsaquo;</span> Where is the contract for Acme Ltd?</div>
+          </div>
+          <div style="background:#EAF3F8;border:1px solid #C9E4EE;border-left:3px solid #1772A8;border-radius:8px;padding:13px 17px;font-size:14px;line-height:1.6;color:#2C4754"><b style="color:#125D8A">Good to know&nbsp;&middot;&nbsp;</b>The more descriptive your request &mdash; document type, date, identifying details &mdash; the better the results.</div>
+
+          <!-- Accounting -->
+          <h2 id="accounting" style="scroll-margin-top:90px;font-weight:800;font-size:23px;letter-spacing:-.02em;margin:44px 0 8px;color:#083A4D">3. Inserting documents into your accounting system</h2>
+          <p style="font-size:15.5px;line-height:1.65;color:#52617A;margin:0 0 18px">Insert payables, create receivables, insert receipts and reconcile bank statements &mdash; all from within the app. First, connect your accounting app.</p>
+          <h3 style="font-weight:700;font-size:16px;margin:0 0 14px;color:#083A4D">Step 1 &mdash; Connect your accounting app</h3>
+          <div style="display:flex;flex-direction:column;gap:16px;margin-bottom:14px">
+            <div style="display:flex;gap:14px"><div style="flex-shrink:0;width:26px;height:26px;border-radius:50%;background:#083A4D;color:#fff;font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center">1</div><div style="font-size:15px;line-height:1.6;color:#3A4A60;padding-top:2px">In the left navigation, click the <b>Apps</b> icon to open the Apps Catalogue.</div></div>
+            <div style="display:flex;gap:14px"><div style="flex-shrink:0;width:26px;height:26px;border-radius:50%;background:#083A4D;color:#fff;font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center">2</div><div style="font-size:15px;line-height:1.6;color:#3A4A60;padding-top:2px">Find your accounting app &mdash; v1.1 supports <b>Xero</b> and <b>QuickBooks</b> &mdash; and click <b>Connect</b> beneath its logo.</div></div>
+            <div style="display:flex;gap:14px"><div style="flex-shrink:0;width:26px;height:26px;border-radius:50%;background:#083A4D;color:#fff;font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center">3</div><div style="font-size:15px;line-height:1.6;color:#3A4A60;padding-top:2px">Enter your accounting platform credentials on the sign-in page and follow the on-screen instructions to finish connecting.</div></div>
+          </div>
+          <h3 style="font-weight:700;font-size:16px;margin:26px 0 14px;color:#083A4D">Step 2 &mdash; Insert documents via the Workspace</h3>
+          <p style="font-size:15px;line-height:1.6;color:#52617A;margin:0 0 14px">Open the <b>Workspace</b> and type what you'd like to do &mdash; Doc&#8209;Salvage handles the insertion into your connected accounting system:</p>
+          <div style="background:#06303F;border-radius:10px;padding:18px 20px;margin-bottom:14px;display:flex;flex-direction:column;gap:10px">
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:13.5px;color:#C9D6EA"><span style="color:#5FB7D6">&rsaquo;</span> Insert this invoice as a payable</div>
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:13.5px;color:#C9D6EA"><span style="color:#5FB7D6">&rsaquo;</span> Create a receivable from this purchase order</div>
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:13.5px;color:#C9D6EA"><span style="color:#5FB7D6">&rsaquo;</span> Insert this receipt</div>
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:13.5px;color:#C9D6EA"><span style="color:#5FB7D6">&rsaquo;</span> Reconcile my bank statement</div>
+          </div>
+          <div style="background:#EAF3F8;border:1px solid #C9E4EE;border-left:3px solid #1772A8;border-radius:8px;padding:13px 17px;font-size:14px;line-height:1.6;color:#2C4754"><b style="color:#125D8A">Good to know&nbsp;&middot;&nbsp;</b>v1.1 supports Xero and QuickBooks. Support for more accounting platforms is coming in future versions.</div>
+
+          <!-- Email -->
+          <h2 id="email" style="scroll-margin-top:90px;font-weight:800;font-size:23px;letter-spacing:-.02em;margin:44px 0 8px;color:#083A4D">4. Setting up email document collection</h2>
+          <p style="font-size:15.5px;line-height:1.65;color:#52617A;margin:0 0 18px">The Document Collector monitors your email for specific document types and automatically uploads them to a folder of your choice &mdash; so nothing slips through the cracks.</p>
+          <div style="display:flex;flex-direction:column;gap:16px;margin-bottom:14px">
+            <div style="display:flex;gap:14px"><div style="flex-shrink:0;width:26px;height:26px;border-radius:50%;background:#083A4D;color:#fff;font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center">1</div><div style="font-size:15px;line-height:1.6;color:#3A4A60;padding-top:2px">In the left navigation, click the <b>Settings</b> icon to open Preference Settings.</div></div>
+            <div style="display:flex;gap:14px"><div style="flex-shrink:0;width:26px;height:26px;border-radius:50%;background:#083A4D;color:#fff;font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center">2</div><div style="font-size:15px;line-height:1.6;color:#3A4A60;padding-top:2px">Go to the <b>Automation</b> section, find <b>Document Collector</b> and switch on its toggle.</div></div>
+            <div style="display:flex;gap:14px"><div style="flex-shrink:0;width:26px;height:26px;border-radius:50%;background:#083A4D;color:#fff;font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center">3</div><div style="font-size:15px;line-height:1.6;color:#3A4A60;padding-top:2px">Define your rule: a <b>Document Type</b> to watch for (e.g. invoice, receipt, statement) and a <b>Destination Folder</b> in your Library.</div></div>
+            <div style="display:flex;gap:14px"><div style="flex-shrink:0;width:26px;height:26px;border-radius:50%;background:#083A4D;color:#fff;font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center">4</div><div style="font-size:15px;line-height:1.6;color:#3A4A60;padding-top:2px">Save your rule &mdash; Doc&#8209;Salvage now monitors your email and collects matching documents at periodic intervals.</div></div>
+          </div>
+          <div style="background:#F6F3EC;border:1px solid #E7E1D4;border-left:3px solid #9AA8BC;border-radius:8px;padding:13px 17px;font-size:14px;line-height:1.6;color:#475568;margin-bottom:12px"><b style="color:#3A4A60">Note&nbsp;&middot;&nbsp;</b>Collection happens at periodic intervals &mdash; documents won't appear instantly, but are collected automatically over time. No action needed once the rule is set.</div>
+          <div style="background:#EAF3F8;border:1px solid #C9E4EE;border-left:3px solid #1772A8;border-radius:8px;padding:13px 17px;font-size:14px;line-height:1.6;color:#2C4754"><b style="color:#125D8A">Good to know&nbsp;&middot;&nbsp;</b>v1.1 supports one collection rule at a time. Support for multiple rules is coming in a future version.</div>
+
+          <!-- closing -->
+          <div style="margin-top:48px;background:#06303F;border-radius:14px;padding:30px 32px;color:#fff">
+            <div style="font-weight:800;font-size:19px;letter-spacing:-.01em;margin-bottom:8px">You're off to a great start.</div>
+            <p style="font-size:14.5px;line-height:1.65;color:#AFC0D8;margin:0">As you get comfortable, explore <b style="color:#fff">Audit Trails</b> to monitor activity across the app, and check <b style="color:#fff">Preference Settings</b> to set storage and token budgets that keep your costs in check. There's a lot more to discover &mdash; enjoy the journey.</p>
+          </div>
+
+        </article>
+      </div>
+    </section>
+  </main>
+  

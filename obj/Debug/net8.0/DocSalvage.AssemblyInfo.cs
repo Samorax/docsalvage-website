@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DocSalvage")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+04c4efbbe94b8c1c1f8efbf3e9a721d1a38e3c10")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1d21950e40b267d1637aaa22e18af1642c336117")]
 [assembly: System.Reflection.AssemblyProductAttribute("DocSalvage")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DocSalvage")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
